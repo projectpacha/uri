@@ -1,0 +1,204 @@
+/* ---------------------------------------------
+   Base
+--------------------------------------------- */
+QWidget {
+    font: 12px "Arial";
+    color: #e5eaf0;
+    background-color: #2b2e3b;
+}
+
+/* ---------------------------------------------
+   Icons (60% grey)
+--------------------------------------------- */
+QToolButton, QPushButton, QComboBox::down-arrow {
+    /* ensure your SVGs inherit this color */
+    color: rgba(229, 234, 240, 0.6);
+}
+
+/* ---------------------------------------------
+   Scrollbars
+--------------------------------------------- */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #3c3f4b;
+    width: 8px; height: 8px;
+    margin: 0;
+}
+
+QScrollBar::handle {
+    background: #9ea2ab;
+    size: 10px;
+    border-radius: 2px;
+}
+QScrollBar::handle:hover {
+    background: #4a5284;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line,
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: transparent;
+    border: none;
+}
+
+QScrollBarCorner {
+    background: transparent;
+}
+
+/* ---------------------------------------------
+   Frames & Splitters
+--------------------------------------------- */
+QFrame {
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+}
+QSplitter {
+    background: transparent;
+}
+QSplitter::handle:hover {
+    background: #4a5284;
+}
+
+/* ---------------------------------------------
+   Labels
+--------------------------------------------- */
+QLabel {
+    font-size: 12px;
+    color: #e5eaf0;
+}
+
+/* ---------------------------------------------
+   Input Fields
+--------------------------------------------- */
+QLineEdit, QTextEdit {
+    font-size: 12px;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    background: #3c3f4b;
+    color: #e5eaf0;
+}
+QLineEdit:focus, QTextEdit:focus {
+    border: 1px solid #81a0c5;
+}
+QTextEdit {
+    min-height: 80px;
+}
+
+/* ---------------------------------------------
+   List Widget
+--------------------------------------------- */
+QListWidget {
+    font-size: 13px;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    background: #2b2e3b;
+    color: #e5eaf0;
+}
+
+/* ---------------------------------------------
+   Buttons
+--------------------------------------------- */
+QPushButton {
+    font-size: 12px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5c6bc0;
+    color: #e5eaf0;
+}
+QPushButton:hover {
+    background-color: #4a5284;
+}
+
+/* ---------------------------------------------
+   Menu Bar & Menus
+--------------------------------------------- */
+QMenuBar {
+    background: #262a35;
+    color: #e5eaf0;
+    padding: 2px 4px;
+}
+QMenuBar::item {
+    padding: 4px 6px;
+    background: transparent;
+}
+QMenuBar::item:selected {
+    background: #81a1c0;
+}
+
+QMenu {
+    background: #3c3f4b;
+    border: none;
+    color: #e5eaf0;
+    padding: 4px;
+    border-radius: 4px;
+}
+QMenu::item {
+    padding: 4px 8px;
+}
+QMenu::item:selected {
+    background: #4a5284;
+    color: #ffffff;
+}
+
+/* ---------------------------------------------
+   ComboBox
+--------------------------------------------- */
+QComboBox {
+    font-size: 12px;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    background: #3c3f4b;
+    color: #e5eaf0;
+}
+QComboBox::drop-down {
+    border: none;
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+}
+QComboBox::down-arrow {
+    /* inherit the 60% grey set above */
+    qproperty-iconSize: 16px;
+}
+
+/* Popup list */
+QComboBox QAbstractItemView {
+    background: #3c3f4b;
+    color: #e5eaf0;
+    selection-background-color: #4a5284;
+    selection-color: #ffffff;
+}
+
+/* ---------------------------------------------
+   Checkboxes
+--------------------------------------------- */
+QCheckBox {
+    font-size: 12px;
+    color: #e5eaf0;
+}
+QCheckBox::indicator {
+    width: 14px; height: 14px;
+    border: 1px solid #3c3f4b;
+    border-radius: 3px;
+    background: #242831;
+}
+QCheckBox::indicator:hover {
+    border-color: #81a1bf;
+}
+QCheckBox::indicator:checked {
+    background: #6e9092;
+    border-color: #81a1bf;
+}
+
+/* ---------------------------------------------
+   Status Bar
+--------------------------------------------- */
+QStatusBar {
+    font-size: 10px;
+    background: #262a35;
+    color: #e5eaf0;
+    padding: 2px 4px;
+}
