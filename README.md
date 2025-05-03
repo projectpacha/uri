@@ -9,7 +9,7 @@
 
 ![scr2](https://github.com/projectpacha/uri/blob/main/screenshots/bl2.png)
 
-![scr3](https://github.com/projectpacha/uri/blob/main/screenshots/bl3.png)
+![scr3](https://github.com/projectpacha/uri/blob/main/screenshots/bl1.png)
 
 ---
 
