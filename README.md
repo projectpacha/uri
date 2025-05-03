@@ -5,6 +5,11 @@
 **Uri DictMaker** is a professional dictionary creation and management tool. It enables users to efficiently build, manage, and edit dictionaries with structured entries that include headwords, parts of speech, and custom notes. Whether you're a linguist, researcher, translator, or language enthusiast, Uri DictMaker offers a user‑friendly interface and powerful features to streamline dictionary development.
 
 ---
+![scr1](https://github.com/projectpacha/uri/blob/main/screenshots/bl3.png)
+
+![scr2](https://github.com/projectpacha/uri/blob/main/screenshots/bl2.png)
+
+![scr3](https://github.com/projectpacha/uri/blob/main/screenshots/bl3.png)
 
 ---
 
