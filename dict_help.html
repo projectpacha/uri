@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dictionary Aids</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: transparent;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .section {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+    }
+    .section-header {
+      cursor: pointer;
+      font-size: 1em;
+      padding: 10px;
+      background: #007acc;
+      color: #fff;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .section-header:hover {
+      background: #005f99;
+    }
+    .toggle-icon {
+      font-size: 1em;
+      font-weight: bold;
+    }
+    .section-content {
+      padding: 10px;
+      display: none;
+      animation: fadeIn 0.5s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Collecting Words</h1>
+      <div class="intro">
+      <p>Building a dictionary is more than just compiling words—it involves systematically organizing them based on meaning and usage. Traditional dictionaries list words alphabetically, but a more effective approach for language documentation is grouping them into semantic domains—categories based on shared meanings, such as nature, emotions, or tools. This method helps capture the relationships between words, making the dictionary more intuitive and insightful. <br>
+</p>
+    </div>
+  <div class="section">
+    <div class="section-header" onclick="toggleSection('semantic-content', this)">
+      <span>Semantic Domains</span> 
+      <span class="toggle-icon">+</span>
+    </div>
+    <div class="section-content" id="semantic-content">
+      <h3>Nature & Environment</h3>
+<ul>
+    <li><strong>Weather:</strong> rain, storm, thunder, lightning, snow, drought</li>
+    <li><strong>Landforms:</strong> mountain, valley, hill, plateau, canyon</li>
+    <li><strong>Bodies of Water:</strong> river, ocean, lake, pond, stream</li>
+    <li><strong>Plants:</strong> tree, flower, grass, fern, shrub</li>
+    <li><strong>Animals:</strong> mammal, bird, reptile, amphibian, insect</li>
+    <li><strong>Natural Disasters:</strong> earthquake, tsunami, hurricane, landslide</li>
+</ul>
+
+<h3>Human Body & Health</h3>
+<ul>
+    <li><strong>Body Parts:</strong> head, arm, leg, heart, lungs</li>
+    <li><strong>Senses:</strong> sight, hearing, taste, touch, smell</li>
+    <li><strong>Diseases & Conditions:</strong> fever, flu, cancer, diabetes, asthma</li>
+    <li><strong>Medical Professions:</strong> doctor, nurse, surgeon, pharmacist</li>
+    <li><strong>Medicine & Treatment:</strong> surgery, therapy, vaccine, antibiotic</li>
+</ul>
+
+<h3>Food & Drink</h3>
+<ul>
+    <li><strong>Fruits:</strong> apple, banana, mango, orange, grape</li>
+    <li><strong>Vegetables:</strong> carrot, potato, spinach, onion, lettuce</li>
+    <li><strong>Grains:</strong> rice, wheat, barley, oats, corn</li>
+    <li><strong>Meat & Seafood:</strong> chicken, beef, pork, fish, shrimp</li>
+    <li><strong>Beverages:</strong> water, tea, coffee, milk, juice</li>
+    <li><strong>Cooking Methods:</strong> frying, boiling, baking, roasting</li>
+</ul>
+
+<h3>Clothing & Fashion</h3>
+<ul>
+    <li><strong>Clothing Types:</strong> shirt, dress, pants, jacket, skirt</li>
+    <li><strong>Accessories:</strong> belt, hat, scarf, gloves, necklace</li>
+    <li><strong>Footwear:</strong> shoes, sandals, boots, sneakers</li>
+    <li><strong>Fabrics & Materials:</strong> cotton, silk, wool, leather, denim</li>
+</ul>
+
+<h3>Housing & Architecture</h3>
+<ul>
+    <li><strong>Types of Houses:</strong> apartment, bungalow, cottage, mansion</li>
+    <li><strong>Rooms:</strong> bedroom, kitchen, bathroom, living room</li>
+    <li><strong>Furniture:</strong> table, chair, sofa, bed, wardrobe</li>
+    <li><strong>Building Materials:</strong> brick, wood, cement, steel, glass</li>
+</ul>
+
+<h3>Family & Relationships</h3>
+<ul>
+    <li><strong>Family Members:</strong> father, mother, brother, sister, cousin</li>
+    <li><strong>Relationships:</strong> friend, neighbor, colleague, acquaintance</li>
+    <li><strong>Life Stages:</strong> infancy, childhood, adolescence, adulthood, old age</li>
+    <li><strong>Social Roles:</strong> teacher, leader, worker, artist, scientist</li>
+</ul>
+
+<h3>Work & Occupations</h3>
+<ul>
+    <li><strong>Professions:</strong> engineer, lawyer, farmer, musician, journalist</li>
+    <li><strong>Tools & Equipment:</strong> hammer, saw, computer, microscope</li>
+    <li><strong>Workplace:</strong> office, factory, farm, hospital, laboratory</li>
+</ul>
+
+<h3>Education & Knowledge</h3>
+<ul>
+    <li><strong>Subjects:</strong> mathematics, science, history, literature, geography</li>
+    <li><strong>School & University:</strong> classroom, library, textbook, diploma</li>
+    <li><strong>Learning Methods:</strong> reading, writing, research, analysis</li>
+</ul>
+
+<h3>Technology & Communication</h3>
+<ul>
+    <li><strong>Devices:</strong> computer, smartphone, tablet, television, radio</li>
+    <li><strong>Internet & Social Media:</strong> website, email, chat, blog, forum</li>
+    <li><strong>Communication:</strong> conversation, message, discussion, argument</li>
+</ul>
+
+<h3>Emotions & Feelings</h3>
+<ul>
+    <li><strong>Positive Emotions:</strong> happiness, love, excitement, relief, gratitude</li>
+    <li><strong>Negative Emotions:</strong> sadness, anger, fear, anxiety, frustration</li>
+    <li><strong>Emotional Reactions:</strong> smile, laugh, cry, frown, sigh</li>
+</ul>
+
+<h3>Time & Calendar</h3>
+<ul>
+    <li><strong>Time Units:</strong> second, minute, hour, day, week, year</li>
+    <li><strong>Days of the Week:</strong> Monday, Tuesday, Wednesday, Thursday, Friday</li>
+    <li><strong>Seasons:</strong> spring, summer, autumn, winter</li>
+    <li><strong>Historical Periods:</strong> ancient, medieval, modern, contemporary</li>
+</ul>
+
+<h3>Law & Government</h3>
+<ul>
+    <li><strong>Legal Terms:</strong> contract, crime, punishment, verdict, evidence</li>
+    <li><strong>Government & Politics:</strong> democracy, election, parliament, president</li>
+    <li><strong>Rights & Freedoms:</strong> speech, vote, privacy, equality</li>
+</ul>
+
+<h3>Travel & Transportation</h3>
+<ul>
+    <li><strong>Modes of Transport:</strong> car, bus, train, bicycle, airplane</li>
+    <li><strong>Travel Actions:</strong> drive, fly, sail, walk, ride</li>
+    <li><strong>Places:</strong> station, airport, harbor, terminal</li>
+</ul>
+
+<h3>Sports & Games</h3>
+<ul>
+    <li><strong>Sports:</strong> football, basketball, cricket, tennis, swimming</li>
+    <li><strong>Equipment:</strong> ball, bat, racket, helmet, whistle</li>
+    <li><strong>Competitive Terms:</strong> team, score, goal, referee, tournament</li>
+</ul>
+
+<h3>Music & Arts</h3>
+<ul>
+    <li><strong>Musical Instruments:</strong> guitar, piano, violin, drums, flute</li>
+    <li><strong>Art Forms:</strong> painting, sculpture, dance, theater, photography</li>
+    <li><strong>Creative Techniques:</strong> sketch, compose, carve, mold, choreograph</li>
+</ul>
+
+<h3>Science & Nature</h3>
+<ul>
+    <li><strong>Branches of Science:</strong> physics, chemistry, biology, astronomy</li>
+    <li><strong>Elements & Materials:</strong> hydrogen, oxygen, iron, carbon</li>
+    <li><strong>Space & Astronomy:</strong> planet, star, moon, galaxy, asteroid</li>
+</ul>
+
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header" onclick="toggleSection('swadesh-content', this)">
+      <span>Swadesh Word List</span> 
+      <span class="toggle-icon">+</span>
+    </div>
+    <div class="section-content" id="swadesh-content">
+     <ol>
+    <li>I</li>
+    <li>you (singular)</li>
+    <li>we</li>
+    <li>this</li>
+    <li>that</li>
+    <li>who</li>
+    <li>what</li>
+    <li>not</li>
+    <li>all</li>
+    <li>many</li>
+    <li>one</li>
+    <li>two</li>
+    <li>big</li>
+    <li>long</li>
+    <li>small</li>
+    <li>woman</li>
+    <li>man (adult male)</li>
+    <li>man (human being)</li>
+    <li>child</li>
+    <li>wife</li>
+    <li>husband</li>
+    <li>mother</li>
+    <li>father</li>
+    <li>animal</li>
+    <li>fish</li>
+    <li>bird</li>
+    <li>dog</li>
+    <li>louse</li>
+    <li>tree</li>
+    <li>seed</li>
+    <li>leaf</li>
+    <li>root</li>
+    <li>bark (of a tree)</li>
+    <li>skin</li>
+    <li>flesh</li>
+    <li>blood</li>
+    <li>bone</li>
+    <li>grease</li>
+    <li>egg</li>
+    <li>horn</li>
+    <li>tail</li>
+    <li>feather</li>
+    <li>hair</li>
+    <li>head</li>
+    <li>ear</li>
+    <li>eye</li>
+    <li>nose</li>
+    <li>mouth</li>
+    <li>tooth</li>
+    <li>tongue</li>
+    <li>fingernail</li>
+    <li>foot</li>
+    <li>leg</li>
+    <li>knee</li>
+    <li>hand</li>
+    <li>wing</li>
+    <li>belly</li>
+    <li>guts</li>
+    <li>neck</li>
+    <li>back</li>
+    <li>breast</li>
+    <li>heart</li>
+    <li>liver</li>
+    <li>drink</li>
+    <li>eat</li>
+    <li>bite</li>
+    <li>see</li>
+    <li>hear</li>
+    <li>know</li>
+    <li>sleep</li>
+    <li>die</li>
+    <li>kill</li>
+    <li>swim</li>
+    <li>fly (verb)</li>
+    <li>walk</li>
+    <li>come</li>
+    <li>lie (as in a bed)</li>
+    <li>sit</li>
+    <li>stand</li>
+    <li>give</li>
+    <li>say</li>
+    <li>sun</li>
+    <li>moon</li>
+    <li>star</li>
+    <li>water</li>
+    <li>rain</li>
+    <li>stone</li>
+    <li>sand</li>
+    <li>earth</li>
+    <li>cloud</li>
+    <li>smoke</li>
+    <li>fire</li>
+    <li>ash</li>
+    <li>burn</li>
+    <li>path</li>
+    <li>mountain</li>
+    <li>red</li>
+    <li>green</li>
+    <li>yellow</li>
+    <li>white</li>
+    <li>black</li>
+    <li>night</li>
+    <li>hot</li>
+    <li>cold</li>
+    <li>full</li>
+    <li>new</li>
+    <li>good</li>
+    <li>round</li>
+    <li>dry</li>
+    <li>name</li>
+    <li>go</li>
+    <li>do</li>
+    <li>stand</li>
+    <li>lie down</li>
+    <li>sit down</li>
+    <li>turn</li>
+    <li>wash</li>
+    <li>wipe</li>
+    <li>pull</li>
+    <li>push</li>
+    <li>throw</li>
+    <li>tie</li>
+    <li>sew</li>
+    <li>count</li>
+    <li>say</li>
+    <li>sing</li>
+    <li>play</li>
+    <li>float</li>
+    <li>flow</li>
+    <li>freeze</li>
+    <li>swell</li>
+    <li>sun</li>
+    <li>moon</li>
+    <li>star</li>
+    <li>rain</li>
+    <li>river</li>
+    <li>lake</li>
+    <li>sea</li>
+    <li>salt</li>
+    <li>stone</li>
+    <li>sand</li>
+    <li>dust</li>
+    <li>earth</li>
+    <li>cloud</li>
+    <li>fog</li>
+    <li>sky</li>
+    <li>wind</li>
+    <li>snow</li>
+    <li>ice</li>
+    <li>smoke</li>
+    <li>fire</li>
+    <li>ash</li>
+    <li>burn</li>
+    <li>road</li>
+    <li>mountain</li>
+    <li>red</li>
+    <li>green</li>
+    <li>yellow</li>
+    <li>white</li>
+    <li>black</li>
+    <li>night</li>
+    <li>warm</li>
+    <li>cold</li>
+    <li>full</li>
+    <li>new</li>
+    <li>old</li>
+    <li>good</li>
+    <li>bad</li>
+    <li>rotten</li>
+    <li>dirty</li>
+    <li>straight</li>
+    <li>round</li>
+    <li>sharp</li>
+    <li>dull</li>
+    <li>smooth</li>
+    <li>wet</li>
+    <li>dry</li>
+    <li>correct</li>
+    <li>near</li>
+    <li>far</li>
+    <li>right</li>
+    <li>left</li>
+    <li>at</li>
+    <li>in</li>
+    <li>with</li>
+    <li>and</li>
+    <li>if</li>
+    <li>because</li>
+    <li>name</li>
+    <li>heavy</li>
+    <li>light (weight)</li>
+    <li>short</li>
+    <li>narrow</li>
+    <li>thin</li>
+    <li>woman</li>
+    <li>man</li>
+    <li>person</li>
+    <li>child</li>
+    <li>wife</li>
+    <li>husband</li>
+    <li>mother</li>
+    <li>father</li>
+    <li>animal</li>
+    <li>fish</li>
+    <li>bird</li>
+    <li>dog</li>
+</ol>
+
+    </div>
+  </div>
+  
+  <script>
+    function toggleSection(id, header) {
+      var content = document.getElementById(id);
+      var icon = header.querySelector(".toggle-icon");
+      
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        icon.textContent = "−";
+      } else {
+        content.style.display = "none";
+        icon.textContent = "+"; 
+      }
+    }
+  </script>
+</body>
+</html>
