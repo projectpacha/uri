@@ -1,0 +1,30 @@
+name: Build Windows Executable
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install pyinstaller PyQt5
+
+      - name: Run PyInstaller
+        run: |
+          pyinstaller --onefile --windowed --icon=icons/app_icon.ico --name=MyApp main.py
+          # Adjust the PyInstaller command to match your .spec file or needs
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: UriDictmaker
+          path: dist/
