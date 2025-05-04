@@ -20,7 +20,7 @@ jobs:
 
       - name: Run PyInstaller
         run: |
-          pyinstaller --onefile --windowed --icon=icons/app_icon.ico --name=MyApp main.py
+          pyinstaller --onefile --windowed --icon=icons/app_icon.ico --name=UriDictmaker main.py
           # Adjust the PyInstaller command to match your .spec file or needs
 
       - name: Upload Artifact
