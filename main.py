@@ -22,6 +22,8 @@ def resource_path(relative_path):
     else:
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
+    
+    icon_path = os.path.join(base_dir, "icons", "app_icon.ico")
 
 class DictionaryApp(QMainWindow):
     def __init__(self):
