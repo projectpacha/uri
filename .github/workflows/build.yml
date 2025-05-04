@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build-windows:
-    runs-on: windows-latest  # Use Microsoft's Windows runner
+    runs-on: windows-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -20,18 +20,18 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller 
-            --onefile 
-            --windowed 
-            --icon=icons/app_icon.ico 
-            --name=UriDictmaker 
-            --add-data "icons/*;icons" 
-            --add-data "themes/*;themes" 
-            --add-data "translations/*;translations" 
+          pyinstaller `
+            --onefile `
+            --windowed `
+            --icon=icons/app_icon.ico `
+            --name=UriDictmaker `
+            --add-data "icons/*;icons" `
+            --add-data "themes/*;themes" `
+            --add-data "translations/*;translations" `
             main.py
 
       - name: Upload Windows Executable
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: UriDictmaker-Windows
           path: dist/UriDictmaker.exe
