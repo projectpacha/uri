@@ -22,7 +22,6 @@ jobs:
         run: |
           pyinstaller `
             --onefile `
-            --windowed `
             --icon=icons/app_icon.ico `
             --name=UriDictmaker `
             --add-data "icons/*;icons" `
